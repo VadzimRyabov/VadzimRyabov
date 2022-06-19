@@ -136,12 +136,15 @@ id="list">
     <option value="6">Магадан</option>
     
     </optgroup>
+   
 
 
 
 </select>
 </label>
 <input type="submit" value="ok"> 
+</form>
+
 
                         
                         
@@ -150,8 +153,34 @@ id="list">
         </form></td>
         </tr>
         <tr>
-        <td>1</td>
-        <td>2</td>
+        <td> <form action="http://fe.it-academy.by/TestForm.php" name="name" enctype="multipart/form-data" method="post">
+                      
+        <fieldset>      
+        <legend>Upload</legend>               
+         <label>
+        <div>Файл:</div>
+        <input type="file" name="file_Field[]" id="file_Field" multiple>
+        <div>Срок хранения(года):</div>
+        <input  type="date"  <br>
+        <input type="submit" value="загрузить">  
+        </label> 
+        
+        
+                   
+    </fieldset> </form>
+</td>
+        <td><form action="http://fe.it-academy.by/TestForm.php" name="name" method="post">
+            <fieldset>
+                              
+             <legend>Строка поиска</legend>
+             <label>
+             <input type="text" namе="text" pattern='^[А-Я][а-я]'>только русские буквы<br>
+             <input type="tel" name="tel" pattern='[+]{1}[0-9]{3}-[0-9]{2}-[0-9]{7}'>Телефонный номер в формате
+             +ХХХ-ХХ-ХХХХХХХ, где Х - любое число<br>
+             
+             <input type="submit" value="проверить"> 
+            </label>
+            </td>
         </tr>
                   
     </table>
