@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @media screen and (max-device-width: 1920px) {
+        div.MenuLevel1 { display: flex; flex-direction: row; flex-flow: row nowrap; }
+        div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer; width: 150px; }
+        div.MenuLevel2 { display: none; width: 150px;  }
+        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute;  z-index: 1 }}
+        @media only screen and (max-device-width: 736px)
+        {
+        div.MenuLevel1 { display: flex; flex-direction: column; }
+        div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer; width: 150px; }
+        div.MenuLevel2 { display: none; transition: 1s; }
+        div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer; transition: 1s; }
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: flex; flex-direction: row nowrap; position:relative; left: 150px; top: 0px; 
+        height: 20px; z-index: 1; transition: 1s; } }    
+        
+    </style>
+
+</head>
+<body>
+    <div class='MenuLevel1'>
+        <div>понедельник
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+        </div>
+    </div>
+        <div>
+            вторник
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            среда
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            четверг
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            пятница
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            суббота
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            воскресенье
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+    
+    
+</body>
+</html>
