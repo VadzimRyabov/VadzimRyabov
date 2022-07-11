@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <style>
+    div>pre{
+      background-color: grey;
+      border: solid 1px;
+      padding: 2px;
+      margin: 1px;
+    }
+  </style>
+  <body>
+    
+       <div class="grid-x grid-margin-x">
+      <div class="cell"><h1 >HOW-TO: Программа на Python, Часть 1 </h1></div>
+          </div>
+    <div class="grid-x">
+      <div class="cell small-4"> 
+           <ul>
+        <li><a href="index1.html"><em>Программа на Python — часть 1</em></a></li>
+        <li><a href="index2.html"><em>Программа на Python — часть 2</em></a></li>
+        <li><a href="index3.html"><em>Программа на Python — часть 3</em></a></li>
+      </ul>
+    </div>
+      <div class="cell large-auto"><h3>HOW-TO: Программа на Python, Часть 1</h3> 
+    </div>
+  
+
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-4"><h2 id="Содержание">Содержание</h2> <ul>
+        <Li><a href="#Наша первая программа">Наша первая программа</a></Li>
+        <Li><a href="#Пример цикла For">Пример цикла For</a></Li>
+      </ul> </div>    
+      <div class="cell large-auto"> <P> Из множества существующих языков программирования Python — один из самых лёгких
+        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+        создание консольных приложений, а в следующей — программирование графических
+        интерфейсов (<ins>GUI</ins>). Давайте создадим простую программу прямо сейчас.
+        </P> </div>
+      </div>
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-4"><h2 id="Наша первая программа">  Наша первая программа</h2>
+          <a href="#Содержание">К содержанию</a> </div>    
+        <div class="cell large-auto">     <p> Наберём код в текстовом редакторе (например, в <STRONG>gedit</STRONG>). Потом мы разберёмся, что делает
+          каждая строка и пойдём дальше.</p>
+      <p>Введите эти 4 строки:</p>
+      <br>
+      <PRE>#!/usr/bin/env python</PRE>
+      <PRE>print 'Hello. I am a python program.'</PRE>
+      <PRE>name = raw_input("What is your name?")</PRE>
+      <PRE>print "Hello there, " + name + "!"</PRE>
+      <p> Это всё. Сохраните файл как <STRONG>hello.py</STRONG> в любом месте. Я предлагаю сохранить его в папке
+          <STRONG>python_examples</STRONG> в домашнем каталоге. Этот пример показывает, как просто написать
+          программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+          этого введите в терминале:
+          </p>
+      <p><em><STRONG>chmod +x hello.py
+      </STRONG></em></p>
+      <p>в папке, в которой вы сохранили программу. Теперь запустите её.
+      </p>
+      <br>
+      <PRE>greg@earth:~/python_examples$ ./hello.py</PRE>
+      <PRE>Hello. I am a python program.</PRE>
+      <PRE>What is your name? Ferd Burphel</PRE>
+      <PRE>Hello there, Ferd Burphel!</PRE>
+      <PRE>greg@earth:~/python_examples$</PRE>
+      <p>Вот и всё. </p></div>
+        </div>
+        <div class="grid-x grid-margin-x">
+       <div class="cell small-4"><h2 id="Пример цикла For">Пример цикла For</h2> 
+      <a href="#Содержание">К содержанию</a></div>    
+      <div class="cell large-auto"> <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу:
+        </p>
+    <br>
+    <PRE>!/usr/bin/env python</PRE>
+    <PRE>for cntr in range(0,10):</PRE>
+    <PRE>print cntr</PRE>
+    <em>Не забудьте поставить символ табуляции перед строкой «print cntr». </em>Это важно. В
+            Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+            как в других языках программирования, а отступы.</p>
+    <br> 
+  
+      
+  </tr></div>
+      </div>
+   
+      
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+      $(document).foundation();
+
+     
+     
+    </script>
+  </body>
+</html>
