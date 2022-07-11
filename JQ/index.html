@@ -5,13 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table
+        {
+            border:  2px;
+            width: 600px;
+                       }
+        tr:nth-child(1)
+        {
+        text-align: center;
+        background-color: aqua;
+        font-weight: bold;
+        
+              }
+        tr:nth-child(2n)
+        {
+        text-align: left;
+                }
+        tr:nth-child(3)
+        {
+        background-color: rgb(128, 128, 128);
+        text-align: left;       
+                }
+        tr:nth-child(5)
+        {
+        background-color: rgb(128, 128, 128);
+        text-align: left;       
+                }
+        td{
+        border: dotted 1px;
+        }    
+
+        tr:hover{
+            background-color: black;
+            color: chartreuse;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            background-color: blue;
+            color: white;
+        }
+
+
+    </style>
+
 </head>
 <body>
     
-<div id="aaa">test</div>
-<button id="btn">click</button>
+    <table>
+        <tr>
+            <td>ФИО</td>
+            <td>пол</td>
+            <td>должность</td>
+            <td>дата рожд.</td>
+            <td>данные 1</td>
+            <td>данные 2</td>
+        </tr>
+        <tr><td>Иванов Иван Иваныч</td>
+            <td>М</td>
+            <td>директор</td>
+            <td>01.01.1980</td>
+            <td>чеоае</td>
+            <td>раопропро</td></tr>
+        <tr><td>Иванов Иван Иваныч</td>
+            <td>М</td>
+            <td>директор</td>
+            <td>01.01.1980</td>
+            <td>чеоае</td>
+            <td>раопропро</td></tr>
+        <tr><td>Иванов Иван Иваныч</td>
+            <td>М</td>
+            <td>директор</td>
+            <td>01.01.1980</td>
+            <td>чеоае</td>
+            <td>раопропро</td></tr>
+        <tr><td>Иванов Иван Иваныч</td>
+            <td>М</td>
+            <td>директор</td>
+            <td>01.01.1980</td>
+            <td>чеоае</td>
+            <td>раопропро</td></tr>
+        <tr><td>Иванов Иван Иваныч</td>
+            <td>М</td>
+            <td>директор</td>
+            <td>01.01.1980</td>
+            <td>чеоае</td>
+            <td>раопропро</td></tr>
+           
+            
+    </table>
 
-
+    <button id="btn">Показать все строки</button>
 
 
 
@@ -24,9 +110,38 @@
             crossorigin="anonymous"></script>
 
     <script>
-        $(document).ready(function($)){
-            var btn=$("#btn")
-        }
+       $(document).ready(function () {
+        
+            $('tr:nth-child(1)').click(function () {
+            $('tr:nth-child(1)').slideUp();
+               
+            });
+            $('tr:nth-child(2)').click(function () {
+            $('tr:nth-child(2)').slideUp();
+               
+            });
+            $('tr:nth-child(3)').click(function () {
+            $('tr:nth-child(3)').slideUp();
+               
+            });
+            $('tr:nth-child(4)').click(function () {
+            $('tr:nth-child(4)').slideUp();
+               
+            });
+            $('tr:nth-child(5)').click(function () {
+            $('tr:nth-child(5)').slideUp();
+               
+            });
+            $('tr:nth-child(6)').click(function () {
+            $('tr:nth-child(6)').slideUp();
+               
+            });
+             $('#btn').click(function () {
+            $('tr').slideDown();
+               
+            });
+     
+    });
     </script>
 </body>
 </html>

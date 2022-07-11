@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+
+</head>
+<body>
+    
+    <form action="http://fe.it-academy.by/TestForm.php" name="name" method="post">
+        <fieldset>
+          
+            <legend>Проверка пароля</legend>               
+           
+        <input  type="password" required>*Пароль<br>              
+        <input  type="password" required>*Повторите пароль<br> 
+        <button id="btn">Отправить</button> 
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script>
+       $(document).ready(function () {
+        
+            $('tr:nth-child(1)').click(function () {
+            $('tr:nth-child(1)').slideUp();
+               
+            });
+            
+     
+    });
+    </script>
+</body>
+</html>
