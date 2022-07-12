@@ -17,8 +17,8 @@
           
             <legend>Проверка пароля</legend>               
            
-        <input  type="password" required>*Пароль<br>              
-        <input  type="password" required>*Повторите пароль<br> 
+        <input  type="text" >*Пароль<br>              
+        <input  type="password" >*Повторите пароль<br> 
         <button id="btn">Отправить</button> 
 
     <script
@@ -29,13 +29,22 @@
     <script>
        $(document).ready(function () {
         
-            $('tr:nth-child(1)').click(function () {
-            $('tr:nth-child(1)').slideUp();
-               
-            });
-            
-     
+         $( "input:password" ).css({
+        background: "green",
+                    });
+        var value1 = $('input[type=text]').val();
+        var value2 = $('input[type=password]').val();
+        if(value1 != 'value2')(function(e) {e.preventDefalt()
+
+        })
+        if(value1 != 'value2') (function () {background: "red",
+
+        })
+
+       
+       
     });
+
     </script>
 </body>
 </html>
