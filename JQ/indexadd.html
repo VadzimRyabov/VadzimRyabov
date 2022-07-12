@@ -20,6 +20,8 @@
         <input  type="text" >*Пароль<br>              
         <input  type="password" >*Повторите пароль<br> 
         <button id="btn">Отправить</button> 
+        </fieldset>
+        </form>
 
     <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -28,19 +30,33 @@
 
     <script>
        $(document).ready(function () {
-        
-         $( "input:password" ).css({
-        background: "green",
-                    });
-        var value1 = $('input[type=text]').val();
-        var value2 = $('input[type=password]').val();
-        if(value1 != 'value2') (function(e) {e.preventDefalt()
 
-        })
-        if(value1 != 'value2') (function () {background: "red",
+       $("input:password, input:text").on('keyup', function(){
+        var inp1 = $('input[type=text]');
+        var inp2 = $('input[type=password]');
+        var value1 = inp1.val();
+        var value2 = inp2.val();
 
-        })
+        if (value1 !== value2) {
+            inp1.css('background', 'red');
+            inp2.css('background', 'red')
+        }
+        else if (value1 ==="" && value2 ==="" ) {
+            inp1.css('background', 'white')
+            inp2.css('background', 'white')
+        }
+        else if (value1 === value2) {
+            inp1.css('background', 'green')
+            inp2.css('background', 'green')
+        }
 
+
+
+
+       })
+       
+       
+ 
        
        
     });
